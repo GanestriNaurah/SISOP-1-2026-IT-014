@@ -15,9 +15,9 @@ if [ "$1" == "--check-tagihan" ]; then
     while IFS=, read -r nama kamar harga tanggal status
     do
         if [ "$status" == "Menunggak" ]; then
-            echo "[$(date '+%Y-%m-%d %H:%M:%S')] TAGIHAN: $nama (Kamar $kamar) - Menunggak Rp$harga" >> $LOG
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] TAGIHAN: $nama (Kamar $kamar) - Menunggak Rp$harga" >> log/tagihan.log
         fi
-    done < $DATA
+    done < data/penghuni.csv
     exit
 fi
 
