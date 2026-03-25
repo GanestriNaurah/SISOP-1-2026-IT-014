@@ -1,4 +1,4 @@
 LAPORAN KOST
-Aktif: Rp4800000
-Tunggakan: Rp
+Aktif: Rp3200000
+Tunggakan: Rp1600000
 Jumlah: 3

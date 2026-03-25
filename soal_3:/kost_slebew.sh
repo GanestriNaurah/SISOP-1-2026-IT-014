@@ -163,7 +163,7 @@ read -p "Menit (0-59): " menit
 
 path=$(realpath $0)
 
-(crontab -l 2>/dev/null; echo "$menit $jam * * * $path --check-tagihan") | crontab -
+(crontab -l 2>/dev/null; echo "$jam $menit * * * $path --check-tagihan") | crontab -
 
 echo "[✓] Cron berhasil ditambahkan"
 ;;
