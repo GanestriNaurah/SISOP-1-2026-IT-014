@@ -107,7 +107,7 @@ Setelah itu kita lakukan clone pada link tersebut.
 ```bash
 git clone https://github.com/pocongcyber77/peta-gunung-kawi.git
 ```
-Selanjutnya, ditemukan file gsxtrack.json berisi data koordinat seperti latitude, longitude, dan titik posisi. Script tersebut digunakan untuk parsing pada file parserkoordinat.sn
+Selanjutnya, ditemukan file gsxtrack.json berisi data koordinat seperti latitude, longitude, dan titik posisi. Script tersebut digunakan untuk parsing pada file parserkoordinat.sh
 ```bash
 grep '"coordinates"' gsxtrack.json | \
 sed 's/[][]//g; s/"coordinates"://g' | \
