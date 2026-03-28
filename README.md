@@ -311,3 +311,6 @@ Merry	4	1600000	2026-08-19	Menunggak
 7. Cron sempat tidak muncul atau tidak sesuai karena kesalahan dalam penulisan perintah dan pengaturan jadwal.
 8. File log tidak terisi karena kondisi data (status “Menunggak”) tidak terpenuhi atau script tidak berjalan sesuai mode cron.
 9. Sempat terjadi kehilangan isi file akibat kesalahan saat menyimpan atau mengedit script.
+
+## Revisi
+Terjadi error pada crontab saat menambahkan jam yang dimana awalnya tidak bisa menambahkan menit di atas 30 dikarenakan pemanggilan $jam dan $menit terbalik (seharusnya $menit baru $jam), sehingga jika melebihi dari 30 menit maka akan mengeluarkan pesan bad hours.
